@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  env:{
-    OPENAI_API_KEY: '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',
-    ELEVENLABS_API_KEY:'1051026692bbbf54763138c9905b72de',
-    PRESENTER_VOICEID:'SzcLvQq1yL2CCLHNrIlQ',
+  env: {
+    NEXT_PUBLIC_OPENAI_API_KEY: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+    NEXT_PUBLIC_ELEVENLABS_API_KEY: process.env.NEXT_PUBLIC_ELEVENLABS_API_KEY,
+    NEXT_PUBLIC_PRESENTER_VOICEID: process.env.NEXT_PUBLIC_PRESENTER_VOICEID
   }
 };
 
